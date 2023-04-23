@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- link css -->
+    <link rel="stylesheet" href="../Css/login.css">
+</head>
+<body>
+    <form action="" id="formularioLogin" class="border rounded container col-4">
+        <h2 class="text-center mb-3">Login</h2>
+        <div class="mb-3 text-center">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+        </div>
+        <div class="mb-3 text-center">
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" minlength="6" maxlength="12" required>
+        </div>
+        <div class="mb-3 text-center">
+            <label for="check">Manternerme conectado</label>
+            <input type="checkbox">
+        </div>
+        <div class="text-center mb-3">
+            <button class="btn btn-danger" type="submit">Ingresar</button>
+        </div>
+        <div class="text-center">
+            <a href="./signUp.html">Registrate aqui!</a>
+        </div>
+    </form>
+    <!-- link bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha384-q9CRHqZndzlxGLOj+xrdLDJa9ittGte1NksRmgJKeCV9DrM7Kz868XYqsKWPpAmn" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!-- link scripts -->
+    <script src="../JS/login.js"></script>
+</body>
+</html>
