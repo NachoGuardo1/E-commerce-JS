@@ -5,5 +5,3 @@
 4-Ya no podemos ingresar a la seccion admin poniendo en la barra de busqueda /pages/admin.html (redirige al inicio salvo que un Admin este logueado)
 5-Se agrego boton logOut y funcionalidad
 
-
-Falta agregar boton log out y funcionalidad
