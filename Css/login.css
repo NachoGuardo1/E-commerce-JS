@@ -1,0 +1,9 @@
+
+@media (max-width: 769px) {
+    .imagen-foot {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+

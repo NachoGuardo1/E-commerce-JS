@@ -13,10 +13,11 @@
     <link rel="stylesheet" href="../Css/login.css">
 </head>
 <body>
+    <!-- navbar -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">Proyecto</a>
+                <a href="../index.html" class="text-decoration-none navbar-brand"><img src="../assets/descarga.jpg" alt="" style="width: 50px; height: 50px;" class="m-2 rounded-circle">Rolling Sport</a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -26,17 +27,21 @@
 
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                        <a class="nav-link" href="#">Nosotros</a>
+                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
                     </div>
 
                 </div>
             </div>
         </nav>
     </header>
+<!-- form login -->
     <main>
-
-        <form  action="" id="formularioLogin" class="container col-lg-6 col-sm-10 border border-primary p-3 shadow shadow-lg rounded">
-            <h2 class="text-center mb-2">Login</h2>
+        <form  action="" id="formularioLogin" class="container col-10 col-sm-8 col-md-8 col-lg-6 border p-3 shadow shadow-lg rounded">
+            <div class="text-center mb-4">
+                <a href="./index.html"><img src="../assets/User1.png" alt="" style="width: 80px; height: 80px;" class="rounded-circle"></a>
+                <p class="h5">Rolling Sport</p>
+                <span>Bienvenido!</span>
+            </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Correo electrónico</label>
                 <input type="email" class="form-control" id="email" required>
@@ -53,10 +58,28 @@
                 <button type="submit" class="btn btn-primary">Ingresar</button>
             </div>
             <div class="text-center">
-                <a href="./signUp.html">Registrate aqui!</a>
+                <a href="./signUp.html" class="text-decoration-none">Registrate aqui!</a>
             </div>
         </form>
     </main>
+        <!-- footer -->
+
+        <footer class="sticky-bottom container-fluid row bg-dark text-light p-3 mx-0 mt-3">
+            <div class="col-sm-10 col-md-6 col-lg-3 imagen-foot">
+                <a href="../index.html" class="text-decoration-none navbar-brand text-light"><img src="../assets/descarga.jpg" alt="" style="width: 75px; height: 75px;" class="m-2 rounded-circle">Rolling Sport</a>
+            </div>
+            <div class="col-sm-10 col-md-6 col-lg-4 row text-center ">
+                <h6 class="text-center">Info varias</h6>
+                <a href=""  target="_blank" class="text-decoration-none text-light"><img src="../assets/usuario.gif" alt="" style="width: 20px; height: 20px;" class="me-1">Terminos y condiciones</a>
+                <a href=""  target="_blank" class="text-decoration-none text-light"><img src="../assets/warning.png" alt="" style="width: 20px; height: 20px;" class="me-1">Politica de privacidad</a>
+            </div>
+            <div class="col-sm-10 col-md-6 col-lg-4 row text-center">
+                <h6 class="text-center">Nuestras redes</h6>
+                <a href="www.facebook.com"  target="_blank" class="text-decoration-none  text-light"><img src="../assets/facebook (1).png" alt="" style="width: 20px; height: 20px;" class="me-1"> Facebook</a>
+                <a href="www.twitter.com"  target="_blank" class="text-decoration-none text-light"><img src="../assets/twitter.png" alt="" style="width: 20px; height: 20px;" class="me-1">Twitter</a>
+                <a href="www.instagram.com"  target="_blank" class="text-decoration-none text-light"><img src="../assets/instagram.png" alt="" style="width: 20px; height: 20px;" class="me-1">Instagram</a>
+            </div>
+        </footer>
 
     <!-- link bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha384-q9CRHqZndzlxGLOj+xrdLDJa9ittGte1NksRmgJKeCV9DrM7Kz868XYqsKWPpAmn" crossorigin="anonymous"></script>
