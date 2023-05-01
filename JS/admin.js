@@ -1,7 +1,7 @@
 const Administradores = JSON.parse(localStorage.getItem('usuariosLogueados'));
     if(Administradores){
         if(Administradores.email === 'nachoguardo1@gmail.com' || Administradores.email === 'diegofenino1@gmail.com' || Administradores.email ==='alealaniz1@gmail.com' || Administradores.email === 'lautarocuello1@gmail.com'){
-            console.log('hola admin')
+            console.info('hola admin')
         }else{
             window.location.href = '/index.html'
         }
