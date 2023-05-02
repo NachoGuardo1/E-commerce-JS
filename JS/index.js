@@ -1,7 +1,6 @@
 let arrayProductos = JSON.parse(localStorage.getItem('productos'));
 let seccionHombre = document.querySelector('#seccionHombre');
 let seccionMujer = document.querySelector('#seccionMujer');
-let seccionNiño = document.querySelector('#seccionNiño');
 
 
 const leerProductosHombres = () => {
@@ -16,13 +15,12 @@ const leerProductosHombres = () => {
     }else{
         menProds.forEach((element) => {
             seccionHombre.innerHTML += `
-            <div class="card" style="width: 18rem;">
-            <img src="${element.imagen}" class="card-img-top" alt="...">
+            <div class="laTarjeta card bg-dark" style="width: 18rem;">
+            <img src="${element.imagen}" class="card-img-top">
             <div class="card-body text-center">
-                <h5 class="card-title">${element.nombre} </h5>
-                <p class="card-text">${element.descripcion}</p>
-                <p class="card-text">${element.categoria}</p>
-                <p href="#">$${element.precio}</p>
+                <h5 class="card-title text-light">${element.nombre}</h5>                            
+                <p class="card-text text-light">$${element.precio}</p>                         
+                <a href="/pages/error404" class="btn btn-outline-light">COMPRAR</a>
             </div>
         </div> `
         });
@@ -44,15 +42,16 @@ const leerProductosMujeres = () => {
     }else{
         mujerProds.forEach((element) => {
             seccionMujer.innerHTML += `
-            <div class="card" style="width: 18rem;">
-            <img src="${element.imagen}" class="card-img-top" alt="...">
-            <div class="card-body text-center">
-                <h5 class="card-title">${element.nombre} </h5>
-                <p class="card-text">${element.descripcion}</p>
-                <p class="card-text">${element.categoria}</p>
-                <p>$${element.precio}</p>
-            </div>
-        </div> `
+            
+                    <div class="laTarjeta card bg-dark" style="width: 18rem;">
+                        <img src="${element.imagen}" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-light">${element.nombre}</h5>                            
+                            <p class="card-text text-light">$${element.precio}</p>                         
+                            <a href="/pages/error404" class="btn btn-outline-light">COMPRAR</a>
+                        </div>
+                    </div>
+        `
         });
     }
 }
@@ -60,29 +59,4 @@ const leerProductosMujeres = () => {
 leerProductosMujeres()
 
 
-const leerProductosNiños = () => {
 
-
-    seccionNiño.innerHTML = '';
-    arrayProductos = JSON.parse(localStorage.getItem('productos'));
-    let ninProds = arrayProductos.filter((prod) => prod.categoria === 'Niño')
-
-    if(arrayProductos === null){
-        ninProds = [];
-    }else{
-        ninProds.forEach((element) => {
-            seccionNiño.innerHTML += `
-            <div class="card" style="width: 18rem;">
-            <img src="${element.imagen}" class="card-img-top" alt="...">
-            <div class="card-body text-center">
-                <h5 class="card-title">${element.nombre} </h5>
-                <p class="card-text">${element.descripcion}</p>
-                <p class="card-text">${element.categoria}</p>
-                <p>$${element.precio}</p>
-            </div>
-        </div> `
-        });
-    }
-}
-
-leerProductosNiños()
