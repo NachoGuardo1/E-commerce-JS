@@ -1,4 +1,4 @@
-# RollingTech
+# Ecommerce con JavaScript y LocalStorage
 
 Prototipo de E-commerce realizado con JavaScript con almacenamiento en LocalStorage
 
